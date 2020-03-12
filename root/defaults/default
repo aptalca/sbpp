@@ -1,9 +1,8 @@
 server {
   listen 80 default_server;
-  listen 443 ssl;
-  server_name APP_URL_PLACEHOLDER;
-  root /var/www/html/public;
-  index index.html index.htm index.php;
+  server_name _;
+  root /config/www;
+  index index.php;
   ssl_certificate /config/keys/cert.crt;
   ssl_certificate_key /config/keys/cert.key;
   client_max_body_size 0;

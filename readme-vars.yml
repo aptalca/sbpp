@@ -1,10 +1,10 @@
 ---
 
 # project information
-project_name: sbpp
-project_url: "https://github.com/drizuid/sbpp"
+project_name: SourcebansPP
+project_url: "https://sbpp.dev"
 project_logo: "https://s3-us-west-2.amazonaws.com/linuxserver-docs/images/sbpp-logo500x500.png"
-project_blurb: "[{{ project_name|capitalize }}]({{ project_url }}) Global admin, ban, and communication management system for the Source engine."
+project_blurb: "[{{ project_name|capitalize }}]({{ project_url }}) is a global admin, ban, and communication management system for the Source engine."
 project_lsio_github_repo_url: "https://github.com/linuxserver/docker-{{ project_name }}"
 
 # supported architectures
@@ -24,7 +24,7 @@ param_ports:
   - { external_port: "8080", internal_port: "80", port_desc: "SBPP  Web UI" }
 param_usage_include_env: true
 param_env_vars:
-  - { env_var: "REMOVE_SETUP_DIRS", env_value: "true or false", desc: "true for existing setup false for new."}
+  - { env_var: "REMOVE_SETUP_DIRS", env_value: "true", desc: "true for existing setup false for new."}
 
 optional_parameters: |
   This container also generates an SSL certificate and stores it in
@@ -38,39 +38,23 @@ optional_parameters: |
   -p 443:443
   ```
 
-  The application accepts a series of environment variables to further customize itself on boot:
-
-  | Parameter | Function |
-  | :---: | --- |
-  | `-e APP_TIMEZONE=` | The timezone the application will use IE US/Pacific|
-  | `-e APP_ENV=` | Default is production but can use testing or develop|
-  | `-e APP_DEBUG=` | Set to true to see debugging output in the web UI|
-  | `-e APP_LOCALE=` | Default is en set to the language preferred full list [here][localesurl]|
-  | `-e MAIL_PORT_587_TCP_ADDR=` | SMTP mailserver ip or hostname|
-  | `-e MAIL_PORT_587_TCP_PORT=` | SMTP mailserver port|
-  | `-e MAIL_ENV_FROM_ADDR=` | The email address mail should be replied to and listed when sent|
-  | `-e MAIL_ENV_FROM_NAME=` | The name listed on email sent from the default account on the system|
-  | `-e MAIL_ENV_ENCRYPTION=` | Mail encryption to use IE tls |
-  | `-e MAIL_ENV_USERNAME=` | SMTP server login username|
-  | `-e MAIL_ENV_PASSWORD=` | SMTP server login password|
-
 custom_compose: |
   version: "3"
   services:
     sbpp:
       image: linuxserver/sbpp:latest
-      container_name: sbpp
+      container_name: SourcebansPP
       restart: always
       depends_on:
         - mariadb
       volumes:
         - <path to data>:/config
       environment:
-        - REMOVE_SETUP_DIRS=< true or false >
+        - REMOVE_SETUP_DIRS=true #verify if you want true
         - PGID=1000
         - PUID=1000
       ports:
-        - "80:80"
+        - 80:80
 
 # application setup block
 app_setup_block_enabled: true
