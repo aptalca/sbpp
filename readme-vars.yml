@@ -3,7 +3,7 @@
 # project information
 project_name: SourcebansPP
 project_url: "https://sbpp.dev"
-project_logo: "https://s3-us-west-2.amazonaws.com/linuxserver-docs/images/sbpp-logo500x500.png"
+project_logo: "https://raw.githubusercontent.com/sbpp/sourcebans-pp/v1.x/.github/logo.png"
 project_blurb: "[{{ project_name|capitalize }}]({{ project_url }}) is a global admin, ban, and communication management system for the Source engine."
 project_lsio_github_repo_url: "https://github.com/linuxserver/docker-{{ project_name }}"
 
