@@ -36,9 +36,9 @@ Find us at:
 [![Build Status](https://ci.linuxserver.io/view/all/job/Docker-Pipeline-Builders/job/docker-SourcebansPP/job/master/badge/icon?style=flat-square)](https://ci.linuxserver.io/job/Docker-Pipeline-Builders/job/docker-SourcebansPP/job/master/)
 [![](https://lsio-ci.ams3.digitaloceanspaces.com/linuxserver/SourcebansPP/latest/badge.svg)](https://lsio-ci.ams3.digitaloceanspaces.com/linuxserver/SourcebansPP/latest/index.html)
 
-[Sourcebanspp](https://sbppi.dev) is a global admin, ban, and communication management system for the Source engine.
+[Sourcebanspp](https://sbpp.dev) is a global admin, ban, and communication management system for the Source engine.
 
-[![SourcebansPP](https://s3-us-west-2.amazonaws.com/linuxserver-docs/images/sbpp-logo500x500.png)](https://sbppi.dev)
+[![SourcebansPP](https://s3-us-west-2.amazonaws.com/linuxserver-docs/images/sbpp-logo500x500.png)](https://sbpp.dev)
 
 ## Supported Architectures
 
@@ -83,7 +83,7 @@ version: "3"
 services:
   sbpp:
     image: linuxserver/sbpp:latest
-    container_name: sbpp
+    container_name: SourcebansPP
     restart: always
     depends_on:
       - mariadb
@@ -153,7 +153,7 @@ In this instance `PUID=1000` and `PGID=1000`, to find yours use `id user` as bel
 &nbsp;
 ## Application Setup
 
-Access the webui at `<your-ip>:80`, for more information check out [Sourcebanspp](https://sbppi.dev).
+Access the webui at `<your-ip>:80`, for more information check out [Sourcebanspp](https://sbpp.dev).
 
 
 
