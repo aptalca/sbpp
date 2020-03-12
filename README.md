@@ -23,28 +23,28 @@ Find us at:
 * [GitHub](https://github.com/linuxserver) - view the source for all of our repositories.
 * [Open Collective](https://opencollective.com/linuxserver) - please consider helping us by either donating or contributing to our budget
 
-# [linuxserver/sbpp](https://github.com/linuxserver/docker-sbpp)
+# [linuxserver/Sourcebans++](https://github.com/linuxserver/docker-Sourcebans++)
 
-[![GitHub Stars](https://img.shields.io/github/stars/linuxserver/docker-sbpp.svg?style=flat-square&color=E68523&logo=github&logoColor=FFFFFF)](https://github.com/linuxserver/docker-sbpp)
-[![GitHub Release](https://img.shields.io/github/release/linuxserver/docker-sbpp.svg?style=flat-square&color=E68523&logo=github&logoColor=FFFFFF)](https://github.com/linuxserver/docker-sbpp/releases)
-[![GitHub Package Repository](https://img.shields.io/static/v1.svg?style=flat-square&color=E68523&label=linuxserver.io&message=GitHub%20Package&logo=github&logoColor=FFFFFF)](https://github.com/linuxserver/docker-sbpp/packages)
-[![GitLab Container Registry](https://img.shields.io/static/v1.svg?style=flat-square&color=E68523&label=linuxserver.io&message=GitLab%20Registry&logo=gitlab&logoColor=FFFFFF)](https://gitlab.com/Linuxserver.io/docker-sbpp/container_registry)
-[![Quay.io](https://img.shields.io/static/v1.svg?style=flat-square&color=E68523&label=linuxserver.io&message=Quay.io)](https://quay.io/repository/linuxserver.io/sbpp)
-[![MicroBadger Layers](https://img.shields.io/microbadger/layers/linuxserver/sbpp.svg?style=flat-square&color=E68523)](https://microbadger.com/images/linuxserver/sbpp "Get your own version badge on microbadger.com")
-[![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/sbpp.svg?style=flat-square&color=E68523&label=pulls&logo=docker&logoColor=FFFFFF)](https://hub.docker.com/r/linuxserver/sbpp)
-[![Docker Stars](https://img.shields.io/docker/stars/linuxserver/sbpp.svg?style=flat-square&color=E68523&label=stars&logo=docker&logoColor=FFFFFF)](https://hub.docker.com/r/linuxserver/sbpp)
-[![Build Status](https://ci.linuxserver.io/view/all/job/Docker-Pipeline-Builders/job/docker-sbpp/job/master/badge/icon?style=flat-square)](https://ci.linuxserver.io/job/Docker-Pipeline-Builders/job/docker-sbpp/job/master/)
-[![](https://lsio-ci.ams3.digitaloceanspaces.com/linuxserver/sbpp/latest/badge.svg)](https://lsio-ci.ams3.digitaloceanspaces.com/linuxserver/sbpp/latest/index.html)
+[![GitHub Stars](https://img.shields.io/github/stars/linuxserver/docker-Sourcebans++.svg?style=flat-square&color=E68523&logo=github&logoColor=FFFFFF)](https://github.com/linuxserver/docker-Sourcebans++)
+[![GitHub Release](https://img.shields.io/github/release/linuxserver/docker-Sourcebans++.svg?style=flat-square&color=E68523&logo=github&logoColor=FFFFFF)](https://github.com/linuxserver/docker-Sourcebans++/releases)
+[![GitHub Package Repository](https://img.shields.io/static/v1.svg?style=flat-square&color=E68523&label=linuxserver.io&message=GitHub%20Package&logo=github&logoColor=FFFFFF)](https://github.com/linuxserver/docker-Sourcebans++/packages)
+[![GitLab Container Registry](https://img.shields.io/static/v1.svg?style=flat-square&color=E68523&label=linuxserver.io&message=GitLab%20Registry&logo=gitlab&logoColor=FFFFFF)](https://gitlab.com/Linuxserver.io/docker-Sourcebans++/container_registry)
+[![Quay.io](https://img.shields.io/static/v1.svg?style=flat-square&color=E68523&label=linuxserver.io&message=Quay.io)](https://quay.io/repository/linuxserver.io/Sourcebans++)
+[![MicroBadger Layers](https://img.shields.io/microbadger/layers/linuxserver/Sourcebans++.svg?style=flat-square&color=E68523)](https://microbadger.com/images/linuxserver/Sourcebans++ "Get your own version badge on microbadger.com")
+[![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/Sourcebans++.svg?style=flat-square&color=E68523&label=pulls&logo=docker&logoColor=FFFFFF)](https://hub.docker.com/r/linuxserver/Sourcebans++)
+[![Docker Stars](https://img.shields.io/docker/stars/linuxserver/Sourcebans++.svg?style=flat-square&color=E68523&label=stars&logo=docker&logoColor=FFFFFF)](https://hub.docker.com/r/linuxserver/Sourcebans++)
+[![Build Status](https://ci.linuxserver.io/view/all/job/Docker-Pipeline-Builders/job/docker-Sourcebans++/job/master/badge/icon?style=flat-square)](https://ci.linuxserver.io/job/Docker-Pipeline-Builders/job/docker-Sourcebans++/job/master/)
+[![](https://lsio-ci.ams3.digitaloceanspaces.com/linuxserver/Sourcebans++/latest/badge.svg)](https://lsio-ci.ams3.digitaloceanspaces.com/linuxserver/Sourcebans++/latest/index.html)
 
-[Sbpp](https://github.com/drizuid/sbpp) Global admin, ban, and communication management system for the Source engine.
+[Sourcebans++](https://sbppi.dev) is a global admin, ban, and communication management system for the Source engine.
 
-[![sbpp](https://s3-us-west-2.amazonaws.com/linuxserver-docs/images/sbpp-logo500x500.png)](https://github.com/drizuid/sbpp)
+[![Sourcebans++](https://s3-us-west-2.amazonaws.com/linuxserver-docs/images/sbpp-logo500x500.png)](https://sbppi.dev)
 
 ## Supported Architectures
 
 Our images support multiple architectures such as `x86-64`, `arm64` and `armhf`. We utilise the docker manifest for multi-platform awareness. More information is available from docker [here](https://github.com/docker/distribution/blob/master/docs/spec/manifest-v2-2.md#manifest-list) and our announcement [here](https://blog.linuxserver.io/2019/02/21/the-lsio-pipeline-project/).
 
-Simply pulling `linuxserver/sbpp` should retrieve the correct image for your arch, but you can also pull specific arch images via tags.
+Simply pulling `linuxserver/Sourcebans++` should retrieve the correct image for your arch, but you can also pull specific arch images via tags.
 
 The architectures supported by this image are:
 
@@ -63,14 +63,14 @@ Here are some example snippets to help you get started creating a container.
 
 ```
 docker create \
-  --name=sbpp \
+  --name=Sourcebans++ \
   -e PUID=1000 \
   -e PGID=1000 \
-  -e REMOVE_SETUP_DIRS=true or false \
+  -e REMOVE_SETUP_DIRS=true \
   -p 8080:80 \
-  -v <path to sbpp data>:/config \
+  -v <path to Sourcebans++ data>:/config \
   --restart unless-stopped \
-  linuxserver/sbpp
+  linuxserver/Sourcebans++
 ```
 
 
@@ -90,11 +90,11 @@ services:
     volumes:
       - <path to data>:/config
     environment:
-      - REMOVE_SETUP_DIRS=< true or false >
+      - REMOVE_SETUP_DIRS=true #verify if you want true
       - PGID=1000
       - PUID=1000
     ports:
-      - "80:80"
+      - 80:80
 
 ```
 
@@ -107,7 +107,7 @@ Container images are configured using parameters passed at runtime (such as thos
 | `-p 80` | SBPP  Web UI |
 | `-e PUID=1000` | for UserID - see below for explanation |
 | `-e PGID=1000` | for GroupID - see below for explanation |
-| `-e REMOVE_SETUP_DIRS=true or false` | true for existing setup false for new. |
+| `-e REMOVE_SETUP_DIRS=true` | true for existing setup false for new. |
 | `-v /config` | Contains your config files and data storage for SBPP |
 
 ## Environment variables from files (Docker secrets)
@@ -135,22 +135,6 @@ To use your own certificate swap these files with yours. To use SSL forward your
 -p 443:443
 ```
 
-The application accepts a series of environment variables to further customize itself on boot:
-
-| Parameter | Function |
-| :---: | --- |
-| `-e APP_TIMEZONE=` | The timezone the application will use IE US/Pacific|
-| `-e APP_ENV=` | Default is production but can use testing or develop|
-| `-e APP_DEBUG=` | Set to true to see debugging output in the web UI|
-| `-e APP_LOCALE=` | Default is en set to the language preferred full list [here][localesurl]|
-| `-e MAIL_PORT_587_TCP_ADDR=` | SMTP mailserver ip or hostname|
-| `-e MAIL_PORT_587_TCP_PORT=` | SMTP mailserver port|
-| `-e MAIL_ENV_FROM_ADDR=` | The email address mail should be replied to and listed when sent|
-| `-e MAIL_ENV_FROM_NAME=` | The name listed on email sent from the default account on the system|
-| `-e MAIL_ENV_ENCRYPTION=` | Mail encryption to use IE tls |
-| `-e MAIL_ENV_USERNAME=` | SMTP server login username|
-| `-e MAIL_ENV_PASSWORD=` | SMTP server login password|
-
 
 ## User / Group Identifiers
 
@@ -169,18 +153,18 @@ In this instance `PUID=1000` and `PGID=1000`, to find yours use `id user` as bel
 &nbsp;
 ## Application Setup
 
-Access the webui at `<your-ip>:80`, for more information check out [Sbpp](https://github.com/drizuid/sbpp).
+Access the webui at `<your-ip>:80`, for more information check out [Sourcebans++](https://sbppi.dev).
 
 
 
 ## Support Info
 
-* Shell access whilst the container is running: `docker exec -it sbpp /bin/bash`
-* To monitor the logs of the container in realtime: `docker logs -f sbpp`
+* Shell access whilst the container is running: `docker exec -it Sourcebans++ /bin/bash`
+* To monitor the logs of the container in realtime: `docker logs -f Sourcebans++`
 * container version number
-  * `docker inspect -f '{{ index .Config.Labels "build_version" }}' sbpp`
+  * `docker inspect -f '{{ index .Config.Labels "build_version" }}' Sourcebans++`
 * image version number
-  * `docker inspect -f '{{ index .Config.Labels "build_version" }}' linuxserver/sbpp`
+  * `docker inspect -f '{{ index .Config.Labels "build_version" }}' linuxserver/Sourcebans++`
 
 ## Updating Info
 
@@ -189,18 +173,18 @@ Most of our images are static, versioned, and require an image update and contai
 Below are the instructions for updating containers:
 
 ### Via Docker Run/Create
-* Update the image: `docker pull linuxserver/sbpp`
-* Stop the running container: `docker stop sbpp`
-* Delete the container: `docker rm sbpp`
+* Update the image: `docker pull linuxserver/Sourcebans++`
+* Stop the running container: `docker stop Sourcebans++`
+* Delete the container: `docker rm Sourcebans++`
 * Recreate a new container with the same docker create parameters as instructed above (if mapped correctly to a host folder, your `/config` folder and settings will be preserved)
-* Start the new container: `docker start sbpp`
+* Start the new container: `docker start Sourcebans++`
 * You can also remove the old dangling images: `docker image prune`
 
 ### Via Docker Compose
 * Update all images: `docker-compose pull`
-  * or update a single image: `docker-compose pull sbpp`
+  * or update a single image: `docker-compose pull Sourcebans++`
 * Let compose update all containers as necessary: `docker-compose up -d`
-  * or update a single container: `docker-compose up -d sbpp`
+  * or update a single container: `docker-compose up -d Sourcebans++`
 * You can also remove the old dangling images: `docker image prune`
 
 ### Via Watchtower auto-updater (especially useful if you don't remember the original parameters)
@@ -209,7 +193,7 @@ Below are the instructions for updating containers:
   docker run --rm \
   -v /var/run/docker.sock:/var/run/docker.sock \
   containrrr/watchtower \
-  --run-once sbpp
+  --run-once Sourcebans++
   ```
 
 **Note:** We do not endorse the use of Watchtower as a solution to automated updates of existing Docker containers. In fact we generally discourage automated updates. However, this is a useful tool for one-time manual updates of containers where you have forgotten the original parameters. In the long term, we highly recommend using Docker Compose.
@@ -220,12 +204,12 @@ Below are the instructions for updating containers:
 
 If you want to make local modifications to these images for development purposes or just to customize the logic:
 ```
-git clone https://github.com/linuxserver/docker-sbpp.git
-cd docker-sbpp
+git clone https://github.com/linuxserver/docker-Sourcebans++.git
+cd docker-Sourcebans++
 docker build \
   --no-cache \
   --pull \
-  -t linuxserver/sbpp:latest .
+  -t linuxserver/Sourcebans++:latest .
 ```
 
 The ARM variants can be built on x86_64 hardware using `multiarch/qemu-user-static`
