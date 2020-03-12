@@ -67,7 +67,7 @@ docker create \
   -e PUID=1000 \
   -e PGID=1000 \
   -e REMOVE_SETUP_DIRS=true \
-  -p 8080:80 \
+  -p 80:80 \
   -v <path to SourcebansPP data>:/config \
   --restart unless-stopped \
   linuxserver/SourcebansPP
