@@ -39,7 +39,7 @@ optional_parameters: |
   ```
 
 custom_compose: |
-  version: "3"
+  version: "2"
   services:
     sbpp:
       image: linuxserver/sbpp:latest

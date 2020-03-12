@@ -79,7 +79,7 @@ docker create \
 Compatible with docker-compose v2 schemas.
 
 ```
-version: "3"
+version: "2"
 services:
   sbpp:
     image: linuxserver/sbpp:latest
