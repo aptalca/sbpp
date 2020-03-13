@@ -1,22 +1,16 @@
 #!/usr/bin/with-contenv bash
 
+# make our folders
+mkdir -p \
+	/config/www
+
+# move files
+mv /var/www/html/* /config/www/
+cp /config/www/config.php.template /config/www/config.php
+
 # permissions
 chown -R abc:abc \
-	/config
-
-# copy config files
-PREV_DIR=$(pwd)
-
-	cd /defaults/html || exit
-	shopt -s globstar nullglob
-	for i in *
- 	do
-	[[ ! -e "/config/www/${i}" ]] && cp -r "${i}" "/config/www/${i}"
-	done
-
-cd "${PREV_DIR}" || exit
-
-cp /defaults/default /config/nginx/site-confs/
+        /config 
 
 # If $REMOVE_SETUP_DIRS is set remove the install and updater directories if they exist
 if [ "true" == "$REMOVE_SETUP_DIRS" ] || ( [ ! -z ${INSTALL+x} ] && ["true" != "$INSTALL"] ); then

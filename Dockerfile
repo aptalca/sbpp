@@ -24,6 +24,8 @@ RUN \
         php7-phar \
         php7-pdo_mysql \
         php7-pdo_sqlite \
+	php7-mysqli \
+	php7-mysqlnd \
         php7-sqlite3 \
         php7-tokenizer \
         php7-xml \
@@ -46,9 +48,6 @@ RUN \
  tar xf \
       /tmp/sbpp.tar.gz -C \
       /var/www/html/ && \
- mv \
-      "/var/www/html" \
- /defaults/ && \
  echo "**** cleanup ****" && \
  rm -rf \
         /tmp/*
