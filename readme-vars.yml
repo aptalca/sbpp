@@ -1,7 +1,7 @@
 ---
 
 # project information
-project_name: sourcebans
+project_name: sbpp
 project_url: "https://sbpp.dev"
 project_logo: "https://raw.githubusercontent.com/sbpp/sourcebans-pp/v1.x/.github/logo.png"
 project_blurb: "[{{ project_name|capitalize }}]({{ project_url }}) is a global admin, ban, and communication management system for the Source engine."
@@ -43,14 +43,14 @@ custom_compose: |
   services:
     sbpp:
       image: linuxserver/sbpp:latest
-      container_name: sourcebans
+      container_name: sbpp
       restart: always
       depends_on:
         - mariadb
       volumes:
         - <path to data>:/config
       environment:
-        - REMOVE_SETUP_DIRS=true #verify if you want true
+        - REMOVE_SETUP_DIRS=true #if you are not installing new or upgrading
         - PGID=1000
         - PUID=1000
       ports:
@@ -62,6 +62,7 @@ app_setup_block: |
   You must have a functional MySQL or MariaDB database that this container can reach.
   If this is a new install, browse to `<docker-host-ip>:80/install` For further help check the docs!
   Access the webui at `<your-ip>:80`, for more information check out [{{ project_name|capitalize }}]({{ project_url }}).
+  Once you complete your install or upgrade, ensure you delete the install and updater folders within `<path to data>/www`.
 
 # changelog
 changelogs:

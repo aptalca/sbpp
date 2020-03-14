@@ -5,8 +5,10 @@ mkdir -p \
 	/config/www
 
 # move files
-mv /var/www/html/* /config/www/
-cp /config/www/config.php.template /config/www/config.php
+[[ ! -f /conifg/www/ ]]
+	cp -r /var/www/html/* /config/www/
+[[ ! -f /config/www/config.php ]] && \
+	cp /config/www/config.php.template /config/www/config.php
 
 # permissions
 chown -R abc:abc \
