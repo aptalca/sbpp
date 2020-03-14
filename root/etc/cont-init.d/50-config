@@ -4,11 +4,14 @@
 mkdir -p \
 	/config/www
 
-# move files
-[[ ! -f /conifg/www/ ]]
-	cp -r /var/www/html/* /config/www/
+# moving files
+[[ ! -f /config/www/index.php ]] &&
+	mv /defaults/html/* /config/www/
+
+# copy config files
 [[ ! -f /config/www/config.php ]] && \
-	cp /config/www/config.php.template /config/www/config.php
+        cp /config/www/config.php.template /config/www/config.php
+chmod 664 /config/www/config.php
 
 # permissions
 chown -R abc:abc \

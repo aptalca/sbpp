@@ -12,7 +12,7 @@ ENV REMOVE_SETUP_DIRS=false
 RUN \
  echo "**** install runtime packages ****" && \
  apk add --no-cache \
-        curl \
+	curl \
         php7-bcmath \
         php7-ctype \
         php7-curl \
@@ -48,6 +48,9 @@ RUN \
  tar xf \
       /tmp/sbpp.tar.gz -C \
       /var/www/html/ && \
+ mv \
+      "/var/www/html/" \
+ /defaults/ && \
  echo "**** cleanup ****" && \
  rm -rf \
         /tmp/*

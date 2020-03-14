@@ -48,6 +48,9 @@ RUN \
  tar xf \
       /tmp/sbpp.tar.gz -C \
       /var/www/html/ && \
+ mv \
+      "/var/www/html/" \
+ /defaults/ && \
  echo "**** cleanup ****" && \
  rm -rf \
         /tmp/*
